@@ -1,0 +1,20 @@
+<div style="text-align: center;">
+  <form [formGroup]="formsInfos" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Name </label><input type="text" formControlName="name"><br>
+    </div>
+    <div style="margin-top: 15px">
+      <label>phone </label>
+      <input type="text" formControlName="phone" (keypress)="keyPress($event)" (paste)="onpPaste($event)" contenteditable="true" (drop)="onDrop($event)">
+      <div *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+        <div *ngIf="phone.errors.minlength" style="color: red">
+          phone number (with that Regex '^[ \s\+\s\/0-9]*$') must be at least 4 characters long.
+        </div>
+        <div *ngIf="phone.errors.maxlength" style="color: red">
+          phone number (with that Regex '^[ \s\+\s\/0-9]*$') must be max 10 characters long.
+        </div>
+      </div>
+    </div>
+    <button style="margin-top: 15px" [disabled]="!formsInfos.valid">Submit</button>
+  </form>
+</div>

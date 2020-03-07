@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, HostListener, Output, Renderer2} from '@angular/core';
+import {EventEmitter} from 'events';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testAddEvent';
+
+  constructor() { }
 }
