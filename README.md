@@ -1,8 +1,9 @@
 # Phone-Validation-Angular-with-Reactive-Forms-
 
 # Only number will be accepted (standart taste input, paste event and drop event )
+# Note: 
 Validators.pattern('^[ \s\+\s\/0-9]*$')  => (this can be changed)
- Note: I use this pattern = /[0-9\+\-\ ] for each character => (this can be changed)
+I use this pattern = /[0-9\+\-\ ] for each character => (this can be changed)
 
 
 
