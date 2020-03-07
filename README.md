@@ -1,4 +1,10 @@
-# TestAddEvent
+# Phone-Validation-Angular-with-Reactive-Forms-
+
+# Only number will be accepted (standart taste input, paste event and drop event )
+ Note: I use this pattern = /[0-9\+\-\ ] for each character
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
