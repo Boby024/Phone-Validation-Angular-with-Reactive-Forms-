@@ -11,6 +11,7 @@ formsInfos = this.fb.group({
   name: ['', Validators.required],
   phone: ['', [
     Validators.pattern('^[ \s\+\s\/0-9]*$'),
+    // Validators.pattern('^([0-9]{2,4})?(\\s[0-9]{2,4})*$|^([0-9]{2,4})?((-[0-9]{2,4}))*$'),
     Validators.minLength(4), Validators.maxLength(10), Validators.required] ]
 });
   inputChar: any;
